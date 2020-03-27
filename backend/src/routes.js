@@ -8,14 +8,18 @@ const ProfileController = require('./controllers/ProfileController')
 
 const routes = express.Router();
 
-routes.post('/sessions', SessionController.create)
+routes.post('/sessions', celebrate({
+    [Segments.BODY]: Joi.object().keys({
+        id: Joi.string().required().length(8)
+    })
+}), SessionController.create)
 
 routes.get('/ongs', OngController.index)
 routes.post('/ongs', celebrate({
     [Segments.BODY]: Joi.object().keys({
         name: Joi.string().required(),
         email: Joi.string().required().email(),
-        whatspp: Joi.number().required().min(10).max(11),
+        whatsapp: Joi.string().pattern(/^[0-9]+$/, 'numbers').required().min(10).max(11),
         city: Joi.string().required(),
         uf: Joi.string().required().length(2)
     })
