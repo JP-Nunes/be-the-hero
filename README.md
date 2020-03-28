@@ -12,6 +12,6 @@ You'll need to install <a href="https://nodejs.org/en/">node.js.<a>
    <img src="./public/presentation/gif-hero-front.gif" /> 
 </p>
 
-*Step 1 - On your cmd access be the hero folder, then run npm install.
-*Step 2 - Then access the back end file and run npm start.
-*Step 3 - While backend is running, access with another cmd the frontend folder and run npm start
+* Step 1 - On your cmd access be the hero folder, then run npm install.
+* Step 2 - Then access the back end file and run npm start.
+* Step 3 - While backend is running, access with another cmd the frontend folder and run npm start
