@@ -8,6 +8,8 @@ You'll need to install <a href="https://nodejs.org/en/">node.js.<a>
 
 ## Running front-end
 
+The frontend is where the NGO will register it's data and receive an id, so it can login and register their incidents, asking for help.
+
 <p align="center">
    <img src="./public/presentation/gif-hero-front.gif" /> 
 </p>
@@ -17,6 +19,8 @@ You'll need to install <a href="https://nodejs.org/en/">node.js.<a>
 * Step 3 - While backend is running, access with another cmd the frontend folder and run npm start.
 
 ## Runing mobile
+
+The mobile version is focused on the dononrs, they will look for incidents wich they are able to help. Then they will be redirected to the NGO's whatsapp or email.
 
 <p align="center">
    <img src="./public/presentation/gif-hero-mobile.gif" /> 
